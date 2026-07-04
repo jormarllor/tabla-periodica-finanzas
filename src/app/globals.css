@@ -1,0 +1,273 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Marca compartida con comparafons */
+  --color-primary: #da670e;
+  --color-primary-light: #fdf3ea;
+  --color-primary-dark: #c25c0c;
+  --color-accent: #e8842e;
+
+  /* Paleta tabla periódica (heredada de la infografía) */
+  --color-paper: #f5ebd6;
+  --color-paper-strong: #ede0c2;
+  --color-ink: #1a2540;
+  --color-ink-soft: #2e3a55;
+  --color-muted: #6b6a5b;
+
+  /* Colores por familia */
+  --color-ahorro: #1f3a5f;
+  --color-presupuesto: #2d5a87;
+  --color-inversion: #3a7d44;
+  --color-deuda: #c8412c;
+  --color-jubilacion: #c98a3e;
+  --color-proteccion: #4a4878;
+  --color-psicologia: #d2693d;
+  --color-fiscalidad: #2a3f5f;
+  --color-educacion: #2c4a6e;
+  --color-ciberseguridad: #4a5a8a;
+
+  /* Estados */
+  --color-background: #ffffff;
+  --color-surface: #f8fafc;
+  --color-foreground: #1a1a2e;
+  --color-border: #e2e8f0;
+  --color-success: #10b981;
+  --color-danger: #ef4444;
+  --color-warning: #f59e0b;
+
+  /* Tipografia */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-fraunces);
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Mida unitària de cel·la (escalable per breakpoint) */
+.tp-grid-scope {
+  --cell-w: 4.5rem;
+}
+@media (min-width: 1280px) {
+  .tp-grid-scope {
+    --cell-w: 5rem;
+  }
+}
+
+h1, h2, h3, .title {
+  font-family: var(--font-serif), Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+/* Tipografia del contingut Markdown dels elements */
+.element-prose {
+  color: var(--color-ink);
+  line-height: 1.7;
+  font-size: 1.0625rem;
+}
+.element-prose h2 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-ink);
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+.element-prose h3 {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.element-prose p {
+  margin-bottom: 1.1rem;
+}
+.element-prose ul,
+.element-prose ol {
+  margin: 1rem 0 1.4rem 1.4rem;
+  padding-left: 0.25rem;
+}
+.element-prose ul { list-style: disc; }
+.element-prose ol { list-style: decimal; }
+.element-prose li {
+  margin-bottom: 0.4rem;
+}
+.element-prose li::marker {
+  color: var(--color-primary);
+}
+.element-prose strong {
+  color: var(--color-ink);
+  font-weight: 600;
+}
+.element-prose em {
+  font-style: italic;
+}
+.element-prose a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.element-prose a:hover {
+  color: var(--color-primary-dark);
+}
+.element-prose hr {
+  border: 0;
+  border-top: 1px solid var(--color-paper-strong);
+  margin: 2.5rem 0;
+}
+.element-prose blockquote {
+  border-left: 3px solid var(--color-primary);
+  padding-left: 1rem;
+  font-style: italic;
+  color: var(--color-ink-soft);
+  margin: 1.5rem 0;
+}
+
+/* Taules dins el contingut Markdown */
+.element-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.6rem 0;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+.element-prose thead {
+  background: var(--color-paper-strong);
+}
+.element-prose th {
+  padding: 0.65rem 0.85rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--color-ink);
+  font-family: var(--font-serif);
+  font-size: 0.88rem;
+  letter-spacing: 0.01em;
+  vertical-align: bottom;
+  border-bottom: 2px solid var(--color-ink-soft);
+}
+.element-prose td {
+  padding: 0.55rem 0.85rem;
+  border-bottom: 1px solid var(--color-paper-strong);
+  vertical-align: top;
+  color: var(--color-ink);
+}
+.element-prose tbody tr:last-child td {
+  border-bottom: none;
+}
+.element-prose tbody tr:nth-child(even) {
+  background: rgba(245, 235, 214, 0.4);
+}
+.element-prose tbody tr:hover {
+  background: rgba(218, 103, 14, 0.04);
+}
+/* Alineació via markdown :---: i ---: (remark-gfm usa inline style) */
+.element-prose th[style*="text-align:right"],
+.element-prose td[style*="text-align:right"],
+.element-prose th[style*="text-align: right"],
+.element-prose td[style*="text-align: right"] {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.element-prose th[style*="text-align:center"],
+.element-prose td[style*="text-align:center"] {
+  /* center alignment ja ve com a inline style */
+}
+/* Embolcall scroll horitzontal en mòbil */
+.element-prose table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+@media (min-width: 768px) {
+  .element-prose table {
+    display: table;
+  }
+}
+
+/* Cel·la de la taula periòdica */
+.pt-cell {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.35rem 0.3rem;
+  border-radius: 0.35rem;
+  color: #f5ebd6;
+  text-align: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  cursor: pointer;
+  width: var(--cell-w, 5rem);
+  height: var(--cell-w, 5rem);
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.pt-cell:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  z-index: 5;
+}
+
+.pt-cell .pt-number {
+  position: absolute;
+  top: 0.2rem;
+  left: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  opacity: 0.7;
+}
+
+.pt-cell .pt-symbol {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.1;
+  margin-top: 0.45rem;
+  hyphens: none;
+  word-break: normal;
+  overflow-wrap: normal;
+  max-width: 100%;
+}
+
+/* Símbols mitjans (6-10 car.) — font una mica més petita */
+.pt-cell .pt-symbol[data-len="medium"] {
+  font-size: 0.85rem;
+}
+/* Símbols llargs (>10 car.) — encara més compactes */
+.pt-cell .pt-symbol[data-len="long"] {
+  font-size: 0.72rem;
+  line-height: 1.15;
+}
+/* Símbols multi-paraula (amb espai) — permeten salt natural per paraula */
+.pt-cell .pt-symbol[data-multi="true"] {
+  white-space: normal;
+}
+
+.pt-cell .pt-name {
+  font-size: 0.55rem;
+  margin-top: 0.25rem;
+  line-height: 1.15;
+  opacity: 0.9;
+}
+
+@media (min-width: 1024px) {
+  .pt-cell .pt-symbol { font-size: 1.05rem; }
+  .pt-cell .pt-name   { font-size: 0.58rem; }
+}
+
+/* Vista stacked mòbil: cel·les omplen la cel·la del grid extern (no quadrades fixes) */
+.pt-cell.pt-fluid {
+  width: 100%;
+  height: auto;
+  min-height: 4.5rem;
+}
