@@ -6,7 +6,7 @@
  * compartir para generar URLs absolutas correctas.
  */
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://tablaperiodicafinanzas.es"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://tablaperiodicafinanciera.es"
 ).replace(/\/$/, "");
 
 export const SITE_NAME = "Tabla periódica de las finanzas personales";
