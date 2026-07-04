@@ -10,7 +10,7 @@ import Script from "next/script";
  * - La decisió es desa a localStorage i no es torna a preguntar.
  * - GA només s'activa en producció (no embruta les dades en local).
  */
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "G-WGX818QGT8";
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "G-7DQPGZ3QKM";
 const STORAGE_KEY = "cookie-consent";
 
 type Consent = "granted" | "denied" | null;
