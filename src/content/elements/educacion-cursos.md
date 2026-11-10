@@ -6,7 +6,7 @@ nom: Aprendizaje estructurado
 resum: Cuando quieres ir más allá de lo autodidacta
 periode: 1
 grup: 9
-revisat: "2026-07-04"
+revisat: "2026-11-10"
 ---
 
 ## En una frase
@@ -43,6 +43,10 @@ Es un buen punto de partida si quieres aprender de manera ordenada, con un enfoq
 
 Como Jordi Martínez-Llorente, autor de esta tabla, soy director de educación financiera del Instituto de Estudios Financieros. Por eso Educa Tu Dinero aparece en primer lugar: forma parte directa del marco pedagógico desde el que trabajo esta tabla.
 
+⭐ **[Curso Wellness Financiero](https://educatudinero.com/curso/wellness-financiero/)** — Educa Tu Dinero · 89 €
+
+Un curso sobre bienestar financiero en el que participo, para aprender a ordenar el dinero y ganar margen y tranquilidad. Si esta tabla te ha servido para poner nombre a las piezas, el curso es la forma de encajarlas con un método.
+
 ## Curso de patrimonio personal o familiar
 
 ⭐ **La Gestión de un Patrimonio Personal o Familiar** — [Barcelona Finance School](https://barcelonafinanceschool.com/), la escuela de finanzas del Instituto de Estudios Financieros.
@@ -53,7 +57,7 @@ Puede encajar especialmente si ya tienes una base mínima y quieres ordenar mejo
 
 Su valor es la estructura: poner orden, entender mejor los instrumentos y ganar criterio, más que buscar trucos de mercado o vías rápidas para hacerse rico.
 
-> 🟧 **Nota de transparencia.** Hablo en primera persona porque esta tabla está escrita desde mi marco de trabajo. Soy Jordi Martínez-Llorente, autor de esta tabla y director de educación financiera del Instituto de Estudios Financieros. Por eso aparecen Educa Tu Dinero y Barcelona Finance School: son recursos que forman parte del ecosistema educativo donde trabajo, más que una lista neutral de mercado. Como siempre, antes de inscribirte en cualquier curso hay que mirar programa, precio, calendario, formato, nivel y si realmente encaja con tu momento.
+> 🟧 **Nota de transparencia.** Hablo en primera persona porque esta tabla está escrita desde mi marco de trabajo. Soy Jordi Martínez-Llorente, autor de esta tabla y director de educación financiera del Instituto de Estudios Financieros. Por eso aparecen Educa Tu Dinero (y el curso Wellness Financiero, en el que participo) y Barcelona Finance School: son recursos que forman parte del ecosistema educativo donde trabajo, más que una lista neutral de mercado. Como siempre, antes de inscribirte en cualquier curso hay que mirar programa, precio, calendario, formato, nivel y si realmente encaja con tu momento.
 
 ## El ecosistema Educa Tu Dinero / IEF
 
@@ -130,6 +134,8 @@ Revisa también:
 ## Recursos
 
 ⭐ **[Educa Tu Dinero — IEF](https://www.educatudinero.com/)**. El ecosistema de formación financiera que impulsamos desde el Instituto de Estudios Financieros.
+
+⭐ **[Curso Wellness Financiero — Educa Tu Dinero](https://educatudinero.com/curso/wellness-financiero/)**. El curso de bienestar financiero en el que participo (89 €).
 
 ⭐ **[Barcelona Finance School / IEF](https://barcelonafinanceschool.com/)**. La escuela de finanzas del IEF, con el curso "La Gestión de un Patrimonio Personal o Familiar".
 
