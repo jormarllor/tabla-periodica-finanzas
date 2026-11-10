@@ -48,18 +48,22 @@ Saldo revolving de **2.000 €** a TAE 22%, pagando la cuota mínima del 3%:
 | Mes | Saldo restante | Interés mensual | Cuota pagada |
 |---|---:|---:|---:|
 | 1   | 2.000 € | 36,7 € | 60 € |
-| 12  | 1.820 € | 33,4 € | 56 € |
-| 36  | 1.460 € | 26,8 € | 47 € |
-| 60  | 1.150 € | 21,1 € | 38 € |
-| 120 | 470 € | 8,6 € | 18 € |
+| 12  | 1.758 € | 32,2 € | 53 € |
+| 36  | 1.326 € | 24,3 € | 40 € |
+| 60  | 1.001 € | 18,3 € | 30 € |
+| 120 | 495 € | 9,1 € | 15 € |
 
-En 10 años, habrás pagado **casi el doble del saldo inicial** en intereses y todavía no lo habrás liquidado. Cuando pagas "el mínimo", la mayoría de la cuota va a intereses y muy poco al capital.
+En 10 años habrás pagado unos **2.370 € de intereses (1,2 veces el saldo inicial)** y unos **3.885 € en total, casi el doble de lo que debías**, y todavía no lo habrás liquidado. Cuando pagas "el mínimo", la mayoría de la cuota va a intereses y muy poco al capital.
+
+## Novedades legales (2026)
+
+El Gobierno aprobó el **7 de enero de 2026** el anteproyecto de **ley de crédito al consumo**, que prevé límites máximos de tipos de interés publicados trimestralmente por el Banco de España y un **límite transitorio del {{revolvingTopallTransitori}}**. La directiva europea de crédito al consumo obliga a aplicar las nuevas medidas a partir del **20 de noviembre de 2026**. Hasta que la ley no se publique en el BOE, comprueba si el tope ya está vigente antes de darlo por hecho.
 
 ## Cómo aplicarlo hoy
 
 1. **Mira ahora mismo la TAE de tu tarjeta.** Sale en el contrato y en el recibo mensual.
 2. **Si tienes saldo revolving, prioriza liquidarlo** antes que cualquier otro ahorro o inversión. Ningún rendimiento de mercado supera ahorrarte un 22% seguro.
-3. **Si no puedes liquidarlo de golpe**, considera consolidarlo con un [préstamo personal](/deuda/tae-prestamo-personal) (8-12% TAE), mucho más barato.
+3. **Si no puedes liquidarlo de golpe**, considera consolidarlo con un [préstamo personal](/deuda/tae-prestamo-personal) (6-12% TAE), mucho más barato.
 4. **Configura la tarjeta en "pago total a fin de mes"** siempre que sea posible.
 5. **Si la usas, úsala como herramienta (no como crédito):** paga el 100% del saldo cada mes para evitar intereses.
 

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import SocialLinks from "@/components/SocialLinks";
+import { NEWSLETTER_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Sobre mí",
@@ -23,7 +24,7 @@ export default function SobrePage() {
       </h1>
       <p className="font-serif text-xl text-[var(--color-ink-soft)] font-medium mt-4 leading-snug">
         El bienestar financiero es la tranquilidad que experimentamos cuando
-        tenemos más control sobre nuestras finanzas personales.
+        tenemos el control sobre nuestras finanzas personales.
       </p>
 
       <section className="element-prose mt-8">
@@ -73,7 +74,7 @@ export default function SobrePage() {
         <p>
           En{" "}
           <a
-            href="https://www.linkedin.com/newsletters/wellness-financiero-7115738111975792640/"
+            href={NEWSLETTER_URL}
             target="_blank"
             rel="noopener noreferrer"
           >

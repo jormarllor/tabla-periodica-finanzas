@@ -1,4 +1,5 @@
 import SocialLinks from "./SocialLinks";
+import { NEWSLETTER_URL } from "@/lib/site";
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
         <p>
           Wellness Financiero ·{" "}
           <a
-            href="https://www.linkedin.com/newsletters/wellness-financiero-7115738111975792640/"
+            href={NEWSLETTER_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[var(--color-primary)]"

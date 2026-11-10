@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
-import { SITE_URL, SITE_NAME, SITE_AUTHOR, SITE_DESCRIPTION } from "@/lib/site";
+import { SITE_URL, SITE_NAME, SITE_AUTHOR, SITE_DESCRIPTION, NEWSLETTER_URL } from "@/lib/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   description: SITE_DESCRIPTION,
   applicationName: SITE_NAME,
-  authors: [{ name: SITE_AUTHOR, url: "https://www.linkedin.com/newsletters/wellness-financiero-7115738111975792640/" }],
+  authors: [{ name: SITE_AUTHOR, url: NEWSLETTER_URL }],
   creator: SITE_AUTHOR,
   keywords: [
     "finanzas personales",

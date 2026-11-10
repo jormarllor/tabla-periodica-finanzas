@@ -1,7 +1,7 @@
 ---
 slug: tae-hipoteca-fija
 categoria: deuda
-simbol: 3-4%
+simbol: 2,5-3,5%
 nom: TAE hipoteca
 resum: El coste de una hipoteca hoy y la decisión entre tipo fijo y variable
 periode: 3
@@ -10,7 +10,7 @@ grup: 7
 
 ## En una frase
 
-En un entorno de tipos como el actual, muchas hipotecas fijas en España se mueven aproximadamente **entre el 3% y el 4% TAE**, aunque las mejores ofertas pueden estar por debajo y las condiciones dependen mucho del banco, el perfil del cliente, las bonificaciones y la duración.
+En un entorno de tipos como el actual, muchas hipotecas en España se mueven aproximadamente **entre el 2,5% y el 3,5% TAE**, aunque las mejores ofertas pueden estar por debajo y las condiciones dependen mucho del banco, el perfil del cliente, las bonificaciones y la duración.
 
 ## Qué significa
 
@@ -18,7 +18,7 @@ Una **hipoteca fija** es un préstamo hipotecario en el que el tipo de interés 
 
 Es distinta de una **hipoteca variable**, donde el tipo se calcula habitualmente como Euríbor más un diferencial y se revisa cada seis o doce meses. También es distinta de una **hipoteca mixta**, que combina un primer tramo a tipo fijo y un segundo tramo variable.
 
-La cifra del 3-4% TAE no debe entenderse como una verdad universal. Es una referencia de mercado que puede variar rápidamente. Puede haber ofertas bonificadas por debajo del 3% TAE, ofertas sin bonificar por encima, y diferencias importantes según importe, plazo, porcentaje financiado, estabilidad laboral, ingresos, vinculaciones y negociación.
+La cifra del 2,5-3,5% TAE no debe entenderse como una verdad universal. Es una referencia de mercado que puede variar rápidamente: según el Banco de España, el tipo medio de las nuevas hipotecas es del **{{hipotecaMitjanaTedr}} TEDR ({{hipotecaMitjanaTae}} TAE)**, y el de las fijas, de un **{{hipotecaFixaTin}} TIN**. Puede haber ofertas bonificadas por debajo del 2,5% TAE, ofertas sin bonificar por encima, y diferencias importantes según importe, plazo, porcentaje financiado, estabilidad laboral, ingresos, vinculaciones y negociación.
 
 La **TAE** es más útil que el **TIN** porque intenta reflejar el coste anual efectivo de la hipoteca, incluyendo interés, comisiones y determinados costes asociados. Por eso, cuando compares hipotecas, no mires solo el TIN anunciado: mira la **TAE con bonificaciones**, la **TAE sin bonificaciones** y el **coste real de los productos vinculados**.
 
@@ -26,7 +26,7 @@ La **TAE** es más útil que el **TIN** porque intenta reflejar el coste anual e
 
 Una hipoteca fija **te compra previsibilidad**. Sabes qué cuota pagarás cada mes y eso ayuda mucho a planificar el presupuesto familiar.
 
-También **te protege de subidas de tipos**. Si el Euríbor vuelve a subir, tu cuota fija no se mueve. Esa seguridad puede ser especialmente valiosa si tu presupuesto ya va ajustado o si quieres evitar sorpresas.
+También **te protege de subidas de tipos**. Y el Euríbor ya está subiendo: el Euríbor a 12 meses está ahora en el **{{euribor12m}}**, cuando un año antes estaba en el {{euribor12mAnyAnterior}}. Con una fija, tu cuota no se mueve. Esa seguridad puede ser especialmente valiosa si tu presupuesto ya va ajustado o si quieres evitar sorpresas.
 
 Pero esa tranquilidad **tiene un coste**. En algunos momentos, una hipoteca fija puede empezar con un tipo más alto que una variable o una mixta. Estás pagando, en parte, una prima de seguridad.
 

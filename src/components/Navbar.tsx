@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { NEWSLETTER_URL } from "@/lib/site";
 
 export default function Navbar() {
   return (
@@ -24,7 +25,7 @@ export default function Navbar() {
             Sobre mí
           </Link>
           <a
-            href="https://www.linkedin.com/newsletters/wellness-financiero-7115738111975792640/"
+            href={NEWSLETTER_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="text-[var(--color-primary)] hover:text-[var(--color-primary-dark)] transition-colors"

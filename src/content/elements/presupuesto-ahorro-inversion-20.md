@@ -81,7 +81,7 @@ El 20% es una buena referencia, pero no es un examen. Si ahora puedes apartar un
 
 ✍️ **[¿Seguro que no puedes ahorrar?](https://es.linkedin.com/pulse/seguro-que-puedes-ahorrar-jordi-mart%C3%ADnez-llorente-qqine)** — *Wellness Financiero*. Para quien no llega al 20%: encontrar margen real sin convertir el ahorro en una bronca moral.
 
-⚠️ **Nota sobre fiscalidad.** Los planes de pensiones pueden tener ventajas fiscales, pero en España el **límite general de reducción por aportaciones individuales es de 1.500 € anuales**. Antes de decidir, hay que valorar liquidez, comisiones y tributación futura — el rescate tributa como renta del trabajo.
+⚠️ **Nota sobre fiscalidad.** Los planes de pensiones pueden tener ventajas fiscales, pero en España el **límite general de reducción por aportaciones individuales es de {{plaPensionsLimit}} anuales**. Antes de decidir, hay que valorar liquidez, comisiones y tributación futura — el rescate tributa como renta del trabajo.
 
 ---
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { DADES, numDada, perInput } from "@/lib/dades";
 
 /**
  * Simulador de hipoteca / Euríbor. Adaptación nativa del "Simulador Euríbor"
@@ -38,15 +39,15 @@ function quota(capital: number, annualPct: number, months: number): number {
   return (capital * r * g) / (g - 1);
 }
 
-const ESCENARIS = [1.5, 2, 2.5, 3, 4, 5];
+const ESCENARIS = [2, 2.5, 3, 3.2, 3.5, 4, 5];
 
 export default function SimuladorHipoteca() {
   const [capital, setCapital] = useState("180000");
   const [anys, setAnys] = useState("25");
   const [diferencial, setDiferencial] = useState("0,85");
-  const [euribor, setEuribor] = useState("2,5");
-  const [euriborComp, setEuriborComp] = useState("3,5");
-  const [fix, setFix] = useState("2,9");
+  const [euribor, setEuribor] = useState(perInput(numDada("euribor12m")));
+  const [euriborComp, setEuriborComp] = useState("4");
+  const [fix, setFix] = useState(perInput(numDada("hipotecaFixaTin")));
   const [showTable, setShowTable] = useState(false);
 
   const r = useMemo(() => {
@@ -61,7 +62,7 @@ export default function SimuladorHipoteca() {
     const quotaComp = quota(C, rateComp, months);
     const quotaFix = quota(C, rateFix, months);
 
-    const difMensual = quotaVar - quotaComp;
+    const difMensual = quotaComp - quotaVar;
     const difFixVar = quotaFix - quotaVar;
     const totalVar = quotaVar * months;
     const interessosVar = Math.max(0, totalVar - C);
@@ -233,7 +234,8 @@ export default function SimuladorHipoteca() {
       </div>
 
       <p className="mt-5 text-xs leading-relaxed text-[var(--color-muted)]">
-        Simulación orientativa con el sistema francés de cuota constante y un
+        Euríbor por defecto: {DADES.euribor12m.valor} ({DADES.euribor12m.data},{" "}
+        {DADES.euribor12m.font}). Simulación orientativa con el sistema francés de cuota constante y un
         Euríbor constante (no prevé su evolución real). No incluye
         comisiones, productos vinculados (seguros, etc.) ni impuestos. Sirve
         para entender cómo te puede afectar un cambio del Euríbor, no para fijar

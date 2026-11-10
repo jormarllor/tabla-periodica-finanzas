@@ -46,7 +46,7 @@ El **objetivo Wellness** es la primera modalidad: cubres el saldo cada mes y la 
 2. **Configura el "pago total" como modalidad por defecto.** Llama al banco o cámbialo en la app si ahora mismo tienes "mínimo" o "aplazado".
 3. **Programa una transferencia automática** o liga la tarjeta a una cuenta con suficiente saldo para que se abone sola.
 4. **Si tienes saldo revolving ya acumulado**, considera:
-   - Liquidarlo con un [préstamo personal](/deuda/tae-prestamo-personal) (TAE 8-12%, mucho mejor que 22%).
+   - Liquidarlo con un [préstamo personal](/deuda/tae-prestamo-personal) (TAE 6-12%, mucho mejor que 22%).
    - O bien priorizar su amortización rápida ([método avalancha](/deuda/metodo-avalancha)).
 5. **Una vez a saldo cero**, comprueba cada mes que se mantiene: revisa el extracto los primeros 6 meses para asegurarte.
 

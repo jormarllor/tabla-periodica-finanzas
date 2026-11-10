@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { EINES } from "@/lib/eines";
+import { NEWSLETTER_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Herramientas",
@@ -46,11 +47,10 @@ export default function EinesPage() {
       </div>
 
       <p className="mt-10 text-sm text-[var(--color-muted)]">
-        Iré añadiendo más calculadoras (deuda, independencia financiera, coste
-        de un hábito…). Si hay alguna que te ayudaría, me lo
-        puedes decir en{" "}
+        Si hay alguna otra calculadora que te ayudaría, me lo puedes decir
+        en{" "}
         <a
-          href="https://www.linkedin.com/newsletters/wellness-financiero-7115738111975792640/"
+          href={NEWSLETTER_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="text-[var(--color-primary)] underline underline-offset-2 hover:text-[var(--color-primary-dark)]"

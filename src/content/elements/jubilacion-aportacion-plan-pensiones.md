@@ -10,7 +10,7 @@ grup: 8
 
 ## En una frase
 
-El límite general de aportación a un **plan de pensiones individual** con derecho a reducción fiscal es de **1.500 € anuales**, siempre dentro del límite del 30% de los rendimientos netos del trabajo y actividades económicas. Los planes de **empleo** pueden ampliar ese margen, pero con condiciones.
+El límite general de aportación a un **plan de pensiones individual** con derecho a reducción fiscal es de **{{plaPensionsLimit}} anuales**, siempre dentro del límite del 30% de los rendimientos netos del trabajo y actividades económicas. Los planes de **empleo** pueden ampliar ese margen, pero con condiciones.
 
 ## Qué significa
 
@@ -56,7 +56,7 @@ Pero no es el mejor producto para todo el mundo. Si tienes un tipo marginal bajo
 
 Tradicionalmente, los planes de pensiones eran productos muy ilíquidos: se podían rescatar solo en supuestos específicos —jubilación, incapacidad, muerte, dependencia severa o gran dependencia, paro de larga duración o enfermedad grave.
 
-**Desde 2025 existe un nuevo supuesto de liquidez**: se pueden rescatar derechos consolidados correspondientes a aportaciones con al menos **10 años de antigüedad**. Por ejemplo, desde 2025 están disponibles las aportaciones hechas hasta el 31 de diciembre de 2015, con sus rendimientos correspondientes.
+**Desde 2025 existe un nuevo supuesto de liquidez**: se pueden rescatar derechos consolidados correspondientes a aportaciones con al menos **10 años de antigüedad**. Por ejemplo, en 2026 ya están disponibles las aportaciones hechas hasta el {{plaPensionsLiquidesFins}}, con sus rendimientos correspondientes.
 
 Eso mejora un poco la liquidez, pero no convierte el plan de pensiones en una cuenta de ahorro. Sigue siendo una herramienta de **largo plazo** y el rescate tributa como rendimiento del trabajo.
 

@@ -24,9 +24,12 @@ En España, la inflación media de los últimos 30 años ha estado alrededor del
 | 2005-2015   |                    1,8% | Crisis financiera, deflación puntual       |
 | 2015-2021   |                    1,0% | Tipos de interés bajos, deflación técnica  |
 | 2022-2023   |                    7-9% | Energía, postpandemia, guerra de Ucrania   |
+| 2026 (octubre)  | {{ipcAnual}} (dato adelantado) | Repunte de precios: ahora mismo estamos por encima de la media |
 | Media 1995-2024 |              ~2,5% | Aproximación de planificación              |
 
 El objetivo oficial del **BCE (Banco Central Europeo)** es mantener la inflación en el **2% a medio plazo**. Cuando la inflación sube muy por encima (como en 2022-2023), los bancos centrales suben tipos de interés para enfriar la economía.
+
+> **Ahora mismo estamos por encima.** Según el indicador adelantado del INE, la inflación anual del IPC es ahora del **{{ipcAnual}}**. El 2-3% sigue siendo una buena hipótesis para planificar a largo plazo, pero a corto plazo tus ahorros pierden poder adquisitivo más deprisa.
 
 ## Por qué es importante
 
@@ -45,11 +48,11 @@ El objetivo oficial del **BCE (Banco Central Europeo)** es mantener la inflació
 | Destino                            | Rendimiento anual aprox. | Valor real (en € de hoy) a los 30 años |
 | ---------------------------------- | -----------------------: | -------------------------------------: |
 | Colchón / cuenta corriente al 0%   |                       0% |                               ~4.770 € |
-| Cuenta de ahorro al 2%             |                       2% |                               ~7.730 € |
-| Renta fija diversificada al 4%     |                       4% |                              ~12.500 € |
-| Bolsa global al 7% (media real)    |                       7% |                              ~30.500 € |
+| Cuenta de ahorro al 2%             |                       2% |                               ~8.640 € |
+| Renta fija diversificada al 4%     |                       4% |                              ~15.460 € |
+| Bolsa global al 7% nominal         |                       7% |                              ~36.300 € |
 
-*Suponiendo inflación media del 2,5% y reinversión.*
+*Suponiendo inflación media del 2,5% y reinversión. Los rendimientos son nominales: el valor real se obtiene descontando la inflación cada año. Si el 7% ya fuera un rendimiento real, no habría que descontar nada y saldrían unos 76.100 €.*
 
 ## Cómo aplicarlo hoy
 
@@ -69,7 +72,7 @@ El objetivo oficial del **BCE (Banco Central Europeo)** es mantener la inflació
 
 ## Vinculado con
 
-- [7% Rendimiento real histórico](/inversion/rendimiento-real-bolsa)
+- [5-7% Rendimiento real de la bolsa](/inversion/rendimiento-real-bolsa)
 - [Regla del 72](/inversion/regla-del-72)
 - [Interés compuesto](/inversion/interes-compuesto)
 - [Diversifica](/inversion/diversifica)
