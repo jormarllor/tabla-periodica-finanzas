@@ -6,6 +6,7 @@ nom: Horizonte mínimo para bolsa
 resum: Tiempo mínimo razonable para asumir el riesgo de bolsa
 periode: 4
 grup: 4
+revisat: "2026-07-04"
 ---
 
 ## En una frase

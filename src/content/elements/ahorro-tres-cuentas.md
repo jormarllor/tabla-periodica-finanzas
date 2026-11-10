@@ -6,6 +6,7 @@ nom: Separa necesidades, vida y ahorro
 resum: Tres cajones para dar trabajo a cada euro
 periode: 2
 grup: 2
+revisat: "2026-07-04"
 ---
 
 ## En una frase

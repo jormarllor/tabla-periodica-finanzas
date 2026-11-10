@@ -8,6 +8,13 @@ import SimuladorHipoteca from "@/components/SimuladorHipoteca";
 import SimuladorDeute from "@/components/SimuladorDeute";
 import Independencia from "@/components/Independencia";
 import CostHabit from "@/components/CostHabit";
+import FonsEmergencia from "@/components/FonsEmergencia";
+import PlaPensions from "@/components/PlaPensions";
+import SubscriuCTA from "@/components/SubscriuCTA";
+import Compartir from "@/components/Compartir";
+import JsonLd from "@/components/JsonLd";
+import { personaJsonLd } from "@/lib/autor";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
 
 const COMPONENTS: Record<string, React.ComponentType> = {
   presupuesto: Pressupost,
@@ -16,6 +23,8 @@ const COMPONENTS: Record<string, React.ComponentType> = {
   deuda: SimuladorDeute,
   independencia: Independencia,
   habito: CostHabit,
+  "fondo-emergencia": FonsEmergencia,
+  "plan-pensiones": PlaPensions,
 };
 
 export function generateStaticParams() {
@@ -32,10 +41,10 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   if (!eina) return {};
   const url = `/herramientas/${eina.slug}`;
   return {
-    title: eina.title,
+    title: eina.seoTitol,
     description: eina.desc,
     alternates: { canonical: url },
-    openGraph: { type: "website", url, title: eina.title, description: eina.desc },
+    openGraph: { type: "website", url, title: eina.seoTitol, description: eina.desc },
   };
 }
 
@@ -56,7 +65,7 @@ export default async function EinaPage({ params }: Params) {
       </nav>
 
       <h1 className="font-serif text-3xl sm:text-4xl leading-tight">
-        <span className="mr-2">{eina.icon}</span>
+        <span className="mr-2" aria-hidden>{eina.icon}</span>
         {eina.title}
       </h1>
       <p className="mt-3 text-[var(--color-ink-soft)] leading-relaxed">
@@ -73,6 +82,27 @@ export default async function EinaPage({ params }: Params) {
       <div className="mt-8">
         <Tool />
       </div>
+
+      <Compartir url={`${SITE_URL}/herramientas/${eina.slug}`} titol={eina.title} />
+
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          name: eina.seoTitol,
+          description: eina.desc,
+          url: `${SITE_URL}/herramientas/${eina.slug}`,
+          applicationCategory: "FinanceApplication",
+          operatingSystem: "Cualquiera (navegador web)",
+          inLanguage: "es",
+          isAccessibleForFree: true,
+          offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+          author: personaJsonLd(),
+          isPartOf: { "@type": "WebSite", name: SITE_NAME, url: SITE_URL },
+        }}
+      />
+
+      <SubscriuCTA origen="herramienta" pagina={eina.slug} />
 
       <hr className="my-12 border-[var(--color-paper-strong)]" />
       <Link

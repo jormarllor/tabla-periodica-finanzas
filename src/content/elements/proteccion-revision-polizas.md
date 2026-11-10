@@ -6,6 +6,7 @@ nom: Revisión de pólizas
 resum: Una vez al año para asegurarte de que pagas el precio justo
 periode: 3
 grup: 8
+revisat: "2026-07-04"
 ---
 
 ## En una frase

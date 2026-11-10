@@ -6,6 +6,7 @@ nom: Las pérdidas pesan más
 resum: El sesgo por el cual una pérdida nos duele más que una ganancia equivalente
 periode: 3
 grup: 6
+revisat: "2026-07-04"
 ---
 
 ## En una frase

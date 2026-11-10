@@ -6,6 +6,7 @@ nom: Aprendizaje estructurado
 resum: Cuando quieres ir más allá de lo autodidacta
 periode: 1
 grup: 9
+revisat: "2026-07-04"
 ---
 
 ## En una frase

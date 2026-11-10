@@ -66,7 +66,7 @@ const SECTIONS: {
 
 const COL = { nec: "#2d5a87", non: "#e8842e", est: "#3a7d44", marge: "#ddd5c2" };
 
-const eur0 = new Intl.NumberFormat("es-ES", { style: "currency", currency: "EUR", maximumFractionDigits: 0 });
+const eur0 = new Intl.NumberFormat("es-ES", { useGrouping: "always", style: "currency", currency: "EUR", maximumFractionDigits: 0 });
 const pct0 = (n: number) => Math.round(n * 100) + " %";
 function num(s: string): number {
   const n = parseFloat(String(s).replace(",", "."));

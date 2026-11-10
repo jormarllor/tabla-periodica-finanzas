@@ -6,6 +6,7 @@ nom: FGD por banco y titular
 resum: La garantía oficial de los depósitos bancarios
 periode: 4
 grup: 8
+revisat: "2026-07-04"
 ---
 
 ## En una frase

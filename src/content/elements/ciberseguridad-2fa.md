@@ -6,6 +6,7 @@ nom: Doble factor activo
 resum: La segunda barrera que protege tus cuentas
 periode: 2
 grup: 9
+revisat: "2026-07-04"
 ---
 
 ## En una frase

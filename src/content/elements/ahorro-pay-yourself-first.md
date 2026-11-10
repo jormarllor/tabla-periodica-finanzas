@@ -6,6 +6,7 @@ nom: Transfiere el ahorro cuando cobras
 resum: Ahorro primero, vida con lo que queda
 periode: 2
 grup: 2
+revisat: "2026-07-04"
 ---
 
 ## En una frase

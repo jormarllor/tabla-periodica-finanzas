@@ -6,6 +6,7 @@ nom: "% renta variable según longevidad"
 resum: Una pauta inicial para repartir entre bolsa y renta fija
 periode: 4
 grup: 4
+revisat: "2026-07-04"
 ---
 
 ## En una frase

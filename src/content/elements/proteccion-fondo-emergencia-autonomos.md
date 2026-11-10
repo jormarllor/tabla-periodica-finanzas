@@ -6,6 +6,7 @@ nom: Fondo para autónomos
 resum: El colchón ampliado para quien tiene ingresos irregulares
 periode: 2
 grup: 8
+revisat: "2026-07-04"
 ---
 
 ## En una frase

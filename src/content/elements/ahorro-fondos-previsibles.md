@@ -6,6 +6,7 @@ nom: Gastos que ya vendrán
 resum: Reparte los gastos irregulares durante el año
 periode: 2
 grup: 2
+revisat: "2026-07-04"
 ---
 
 ## En una frase

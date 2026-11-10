@@ -6,6 +6,7 @@ nom: TAE tarjeta de crédito
 resum: El coste del crédito "fácil" que ofrecen las tarjetas
 periode: 3
 grup: 7
+revisat: "2026-11-10"
 ---
 
 ## En una frase

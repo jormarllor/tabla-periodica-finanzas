@@ -6,6 +6,7 @@ nom: Mejora continua
 resum: Pequeños ajustes repetidos que dejan el sistema un poco mejor
 periode: 3
 grup: 6
+revisat: "2026-07-04"
 ---
 
 ## En una frase

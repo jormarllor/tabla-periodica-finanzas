@@ -6,6 +6,7 @@ nom: Aprende en movimiento
 resum: Educación financiera mientras haces otras cosas
 periode: 1
 grup: 9
+revisat: "2026-07-04"
 ---
 
 ## En una frase

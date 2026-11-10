@@ -6,6 +6,7 @@ nom: TER fondo indexado
 resum: La comisión interna de un buen fondo indexado
 periode: 4
 grup: 4
+revisat: "2026-07-04"
 ---
 
 ## En una frase

@@ -6,6 +6,7 @@ nom: Hábitos que arraigan
 resum: El tiempo real para que una conducta se vuelva automática
 periode: 3
 grup: 6
+revisat: "2026-07-04"
 ---
 
 ## En una frase

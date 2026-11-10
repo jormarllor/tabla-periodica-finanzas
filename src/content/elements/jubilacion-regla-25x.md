@@ -6,6 +6,7 @@ nom: Patrimonio = 25 años de gasto
 resum: Cuánto patrimonio invertido hace de colchón para una jubilación larga
 periode: 5
 grup: 8
+revisat: "2026-07-04"
 ---
 
 ## En una frase

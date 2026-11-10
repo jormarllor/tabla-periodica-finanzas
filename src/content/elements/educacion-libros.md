@@ -6,6 +6,7 @@ nom: Fundamentos y perspectiva
 resum: La base sobre la que se construye todo lo demás
 periode: 1
 grup: 9
+revisat: "2026-07-04"
 ---
 
 ## En una frase

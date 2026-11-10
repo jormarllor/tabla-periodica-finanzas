@@ -6,6 +6,7 @@ nom: Gastos hormiga
 resum: Los pequeños recurrentes que suman sin hacer ruido
 periode: 2
 grup: 1
+revisat: "2026-07-04"
 ---
 
 ## En una frase

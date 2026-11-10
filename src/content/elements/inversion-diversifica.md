@@ -6,6 +6,7 @@ nom: Activos, sectores y geografía
 resum: Reparte el riesgo para que ninguna apuesta única decida por tu plan
 periode: 4
 grup: 4
+revisat: "2026-07-04"
 ---
 
 ## En una frase

@@ -6,6 +6,7 @@ nom: Interés compuesto
 resum: Los rendimientos generan nuevos rendimientos
 periode: 4
 grup: 4
+revisat: "2026-07-04"
 ---
 
 ## En una frase

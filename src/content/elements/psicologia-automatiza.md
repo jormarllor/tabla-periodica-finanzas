@@ -6,6 +6,7 @@ nom: Haz que ocurra
 resum: Convertir la disciplina en sistema
 periode: 3
 grup: 6
+revisat: "2026-07-04"
 ---
 
 ## En una frase

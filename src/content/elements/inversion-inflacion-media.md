@@ -6,6 +6,7 @@ nom: Inflación media
 resum: La fuerza que erosiona el dinero parado
 periode: 4
 grup: 4
+revisat: "2026-11-10"
 ---
 
 ## En una frase

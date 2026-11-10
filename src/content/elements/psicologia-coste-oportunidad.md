@@ -6,6 +6,7 @@ nom: Coste de oportunidad
 resum: El valor de la mejor alternativa a la que renuncias
 periode: 3
 grup: 6
+revisat: "2026-07-04"
 ---
 
 ## En una frase

@@ -12,28 +12,30 @@ import ElementCell from "./ElementCell";
 function FamilyBlock({
   categoria,
   showLabel = true,
+  externa,
 }: {
   categoria: Categoria;
   showLabel?: boolean;
+  externa?: boolean;
 }) {
   const info = CATEGORIES[categoria];
   const items = getElementsByCategoria(categoria);
   return (
     <div>
       {showLabel && (
-        <h2
+        <p
           className="font-serif uppercase tracking-[0.16em] text-[0.78rem] leading-none mb-1 text-center"
           style={{ color: info.color }}
         >
           {info.nom}
-        </h2>
+        </p>
       )}
       <div
         className="grid gap-px"
         style={{ gridTemplateColumns: `repeat(${info.cols}, var(--cell-w))` }}
       >
         {items.map((el) => (
-          <ElementCell key={el.id} element={el} />
+          <ElementCell key={el.id} element={el} externa={externa} />
         ))}
       </div>
     </div>
@@ -72,6 +74,50 @@ const ORDRE_STACK: Categoria[] = [
   "ciberseguridad",
 ];
 
+/** La tabla entera en formato grande (escritorio y póster imprimible). */
+export function TaulaGran({ externa }: { externa?: boolean } = {}) {
+  return (
+    <div className="flex items-start justify-center gap-x-5 mx-auto" style={{ width: "fit-content" }}>
+      {/* COLUMNA IZQUIERDA — Ahorro + Presupuesto */}
+      <div className="flex gap-x-2">
+        <FamilyBlock categoria="ahorro" externa={externa} />
+        <FamilyBlock categoria="presupuesto" externa={externa} />
+      </div>
+
+      {/* COLUMNA CENTRAL — Título + Inversión + Deuda + Educación + Ciberseguridad */}
+      <div className="flex flex-col items-center gap-y-3">
+        {/* Solo un H1 en la página: el de la vista móvil (Google indexa la versión móvil). */}
+  <header className="text-center pt-2 pb-1">
+          <p className="font-serif text-3xl lg:text-[2.4rem] text-[var(--color-ink)] leading-[1.05]">
+            Tabla periódica de
+            <br />
+            las finanzas personales
+          </p>
+          <p className="mt-2 uppercase tracking-[0.2em] text-[0.62rem] lg:text-[0.7rem] text-[var(--color-muted)]">
+            Consejos prácticos para tomar mejores decisiones con el dinero
+          </p>
+          <span
+            className="mt-2 inline-block w-2 h-2 rotate-45"
+            style={{ background: "var(--color-primary)" }}
+          />
+        </header>
+        <FamilyBlock categoria="inversion" externa={externa} />
+        <FamilyBlock categoria="deuda" externa={externa} />
+        <FamilyBlock categoria="educacion" externa={externa} />
+        <FamilyBlock categoria="ciberseguridad" externa={externa} />
+      </div>
+
+      {/* COLUMNA DERECHA — Jubilación + Protección + Psicología + Glosario */}
+      <div className="flex flex-col gap-y-3">
+        <FamilyBlock categoria="jubilacion" externa={externa} />
+        <FamilyBlock categoria="proteccion" externa={externa} />
+        <FamilyBlock categoria="psicologia" externa={externa} />
+        <Glossari />
+      </div>
+    </div>
+  );
+}
+
 export default function PeriodicTable() {
   return (
     <>
@@ -80,43 +126,7 @@ export default function PeriodicTable() {
         className="hidden md:block tp-grid-scope"
       >
         <div className="overflow-x-auto pb-4">
-          <div className="flex items-start justify-center gap-x-5 mx-auto" style={{ width: "fit-content" }}>
-            {/* COLUMNA IZQUIERDA — Ahorro + Presupuesto */}
-            <div className="flex gap-x-2">
-              <FamilyBlock categoria="ahorro" />
-              <FamilyBlock categoria="presupuesto" />
-            </div>
-
-            {/* COLUMNA CENTRAL — Título + Inversión + Deuda + Educación + Ciberseguridad */}
-            <div className="flex flex-col items-center gap-y-3">
-              <header className="text-center pt-2 pb-1">
-                <h1 className="font-serif text-3xl lg:text-[2.4rem] text-[var(--color-ink)] leading-[1.05]">
-                  Tabla periódica de
-                  <br />
-                  las finanzas personales
-                </h1>
-                <p className="mt-2 uppercase tracking-[0.2em] text-[0.62rem] lg:text-[0.7rem] text-[var(--color-muted)]">
-                  Consejos prácticos para tomar mejores decisiones con el dinero
-                </p>
-                <span
-                  className="mt-2 inline-block w-2 h-2 rotate-45"
-                  style={{ background: "var(--color-primary)" }}
-                />
-              </header>
-              <FamilyBlock categoria="inversion" />
-              <FamilyBlock categoria="deuda" />
-              <FamilyBlock categoria="educacion" />
-              <FamilyBlock categoria="ciberseguridad" />
-            </div>
-
-            {/* COLUMNA DERECHA — Jubilación + Protección + Psicología + Glosario */}
-            <div className="flex flex-col gap-y-3">
-              <FamilyBlock categoria="jubilacion" />
-              <FamilyBlock categoria="proteccion" />
-              <FamilyBlock categoria="psicologia" />
-              <Glossari />
-            </div>
-          </div>
+          <TaulaGran />
         </div>
       </div>
 

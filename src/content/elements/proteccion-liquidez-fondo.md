@@ -6,6 +6,7 @@ nom: Liquidez del fondo
 resum: El fondo de emergencia tiene que estar disponible en horas, no semanas
 periode: 2
 grup: 8
+revisat: "2026-07-04"
 ---
 
 ## En una frase

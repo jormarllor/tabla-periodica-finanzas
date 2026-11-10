@@ -21,6 +21,9 @@ export default function Navbar() {
           <Link href="/herramientas" className="hover:text-[var(--color-primary)] transition-colors">
             Herramientas
           </Link>
+          <Link href="/poster" className="hidden sm:inline hover:text-[var(--color-primary)] transition-colors">
+            Póster
+          </Link>
           <Link href="/sobre" className="hover:text-[var(--color-primary)] transition-colors">
             Sobre mí
           </Link>

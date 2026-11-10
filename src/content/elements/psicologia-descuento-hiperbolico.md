@@ -6,6 +6,7 @@ nom: Descuento hiperbólico
 resum: Por qué el presente pesa más que el futuro
 periode: 3
 grup: 6
+revisat: "2026-07-04"
 ---
 
 ## En una frase

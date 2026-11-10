@@ -6,6 +6,7 @@ nom: Regla de retirada
 resum: Qué renta inicial puedes retirar de un patrimonio invertido
 periode: 5
 grup: 8
+revisat: "2026-07-04"
 ---
 
 ## En una frase

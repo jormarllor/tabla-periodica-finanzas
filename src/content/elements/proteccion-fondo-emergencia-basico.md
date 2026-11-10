@@ -6,6 +6,7 @@ nom: Fondo de emergencia básico
 resum: El colchón que evita que los imprevistos se conviertan en deuda
 periode: 2
 grup: 8
+revisat: "2026-07-04"
 ---
 
 ## En una frase

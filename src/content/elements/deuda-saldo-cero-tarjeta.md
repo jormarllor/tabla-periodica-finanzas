@@ -6,6 +6,7 @@ nom: Saldo ideal tarjeta
 resum: Paga el 100% de la tarjeta cada mes y evita intereses
 periode: 2
 grup: 7
+revisat: "2026-11-10"
 ---
 
 ## En una frase

@@ -6,6 +6,7 @@ nom: Contraseñas únicas
 resum: Una contraseña fuerte y distinta para cada cuenta
 periode: 2
 grup: 9
+revisat: "2026-07-04"
 ---
 
 ## En una frase

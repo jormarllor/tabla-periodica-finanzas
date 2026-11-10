@@ -6,6 +6,7 @@ nom: Qué parte de los ingresos consigues apartar
 resum: La métrica que te dice cuánto margen tienes
 periode: 2
 grup: 2
+revisat: "2026-07-04"
 ---
 
 ## En una frase

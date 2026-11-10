@@ -9,7 +9,7 @@ import { useMemo, useState } from "react";
  * Tono: consciencia, no culpa. Sin dependencias: gráfico SVG propio.
  */
 
-const eur0 = new Intl.NumberFormat("es-ES", { style: "currency", currency: "EUR", maximumFractionDigits: 0 });
+const eur0 = new Intl.NumberFormat("es-ES", { useGrouping: "always", style: "currency", currency: "EUR", maximumFractionDigits: 0 });
 function num(s: string): number {
   const n = parseFloat(String(s).replace(",", "."));
   return Number.isFinite(n) && n > 0 ? n : 0;

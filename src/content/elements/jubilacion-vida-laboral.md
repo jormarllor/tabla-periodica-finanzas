@@ -6,6 +6,7 @@ nom: El dato antes de la teoría
 resum: Mira qué consta oficialmente sobre ti antes de hacer proyecciones
 periode: 5
 grup: 8
+revisat: "2026-07-04"
 ---
 
 ## En una frase

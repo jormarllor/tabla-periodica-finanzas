@@ -6,6 +6,7 @@ nom: Ahorro y objetivos financieros
 resum: La parte del presupuesto que construye margen para el futuro
 periode: 2
 grup: 1
+revisat: "2026-11-10"
 ---
 
 ## En una frase

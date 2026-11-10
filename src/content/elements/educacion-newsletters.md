@@ -6,6 +6,7 @@ nom: Ideas y reflexiones
 resum: Voces que hablan de dinero cada semana en tu correo
 periode: 1
 grup: 9
+revisat: "2026-07-04"
 ---
 
 ## En una frase

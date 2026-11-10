@@ -6,6 +6,7 @@ nom: 365 € al año
 resum: Ninguna cantidad es demasiado pequeña para empezar
 periode: 1
 grup: 2
+revisat: "2026-07-04"
 ---
 
 ## En una frase

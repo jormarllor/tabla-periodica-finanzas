@@ -6,11 +6,12 @@ nom: Tasa de sustitución prudente
 resum: La parte del sueldo que cubre la pensión pública
 periode: 5
 grup: 8
+revisat: "2026-11-10"
 ---
 
 ## En una frase
 
-La **tasa de sustitución** es el porcentaje de tus ingresos previos a la jubilación que cubrirá la pensión pública. En España puede ser alta para carreras completas y salarios medios, pero hacer los números con un **65-70%** es una hipótesis prudente para calcular qué complemento privado podrías necesitar.
+La **tasa de sustitución** (también llamada **tasa de reemplazo**) es el porcentaje de tus ingresos previos a la jubilación que cubrirá la pensión pública. En España puede ser alta para carreras completas y salarios medios, pero hacer los números con un **65-70%** es una hipótesis prudente para calcular qué complemento privado podrías necesitar.
 
 ## Qué significa
 

@@ -6,6 +6,7 @@ nom: Copia de seguridad
 resum: La regla para no perder nunca tus documentos importantes
 periode: 2
 grup: 9
+revisat: "2026-07-04"
 ---
 
 ## En una frase

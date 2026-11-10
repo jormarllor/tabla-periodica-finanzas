@@ -6,6 +6,7 @@ nom: Estilo de vida
 resum: El margen para disfrutar sin culpa
 periode: 2
 grup: 1
+revisat: "2026-07-04"
 ---
 
 ## En una frase

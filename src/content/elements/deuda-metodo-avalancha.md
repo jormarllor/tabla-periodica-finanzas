@@ -6,6 +6,7 @@ nom: Amortización eficiente
 resum: Ataca primero la deuda con la TAE más alta
 periode: 3
 grup: 7
+revisat: "2026-07-04"
 ---
 
 ## En una frase

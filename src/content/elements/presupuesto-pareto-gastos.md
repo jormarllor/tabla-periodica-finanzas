@@ -6,6 +6,7 @@ nom: Pareto en gastos
 resum: Pocas categorías grandes explican la mayoría del presupuesto
 periode: 3
 grup: 1
+revisat: "2026-07-04"
 ---
 
 ## En una frase

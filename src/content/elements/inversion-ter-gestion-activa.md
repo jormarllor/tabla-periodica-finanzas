@@ -6,6 +6,7 @@ nom: TER gestión activa
 resum: La comisión típica de los fondos que prometen batir al mercado
 periode: 4
 grup: 4
+revisat: "2026-07-04"
 ---
 
 ## En una frase

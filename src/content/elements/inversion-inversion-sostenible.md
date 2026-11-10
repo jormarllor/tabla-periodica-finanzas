@@ -6,6 +6,7 @@ nom: Inversión sostenible
 resum: Invertir teniendo en cuenta criterios ambientales, sociales y de buen gobierno
 periode: 4
 grup: 4
+revisat: "2026-07-04"
 ---
 
 ## En una frase

@@ -6,6 +6,7 @@ nom: Gastos necesarios
 resum: Qué parte del sueldo ya está comprometida antes de empezar el mes
 periode: 2
 grup: 1
+revisat: "2026-07-04"
 ---
 
 ## En una frase

@@ -6,6 +6,7 @@ nom: Coste de la vivienda
 resum: El techo que más marca todo el presupuesto
 periode: 2
 grup: 5
+revisat: "2026-07-04"
 ---
 
 ## En una frase

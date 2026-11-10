@@ -6,6 +6,7 @@ nom: Espera en compras grandes
 resum: Dar tiempo al cerebro antes de decidir
 periode: 3
 grup: 6
+revisat: "2026-07-04"
 ---
 
 ## En una frase

@@ -6,6 +6,8 @@ interface Props {
   element: ElementFinancer;
   style?: CSSProperties;
   fluid?: boolean;
+  /** Abre la ficha en una pestaña nueva (para la tabla insertada en otras webs). */
+  externa?: boolean;
 }
 
 function symbolLen(s: string): "short" | "medium" | "long" {
@@ -15,13 +17,14 @@ function symbolLen(s: string): "short" | "medium" | "long" {
   return "short";
 }
 
-export default function ElementCell({ element, style, fluid }: Props) {
+export default function ElementCell({ element, style, fluid, externa }: Props) {
   const color = CATEGORIES[element.categoria].color;
   const len = symbolLen(element.simbol);
   const multi = /\s/.test(element.simbol);
   return (
     <Link
       href={`/${element.categoria}/${element.slug}`}
+      {...(externa ? { target: "_blank", rel: "noopener" } : {})}
       className={fluid ? "pt-cell pt-fluid" : "pt-cell"}
       style={{ background: color, ...style }}
     >

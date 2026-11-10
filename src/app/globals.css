@@ -271,3 +271,75 @@ h1, h2, h3, .title {
   height: auto;
   min-height: 4.5rem;
 }
+
+/* ── Póster imprimible (/poster) ───────────────────────────────────────── */
+.poster-scroll {
+  overflow-x: auto;
+}
+.poster-sheet {
+  --cell-w: 5rem;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 1.25rem;
+  background: var(--color-paper);
+  border: 1px solid var(--color-paper-strong);
+  border-radius: 0.75rem;
+}
+.poster-sheet .pt-cell:hover {
+  transform: none;
+}
+.poster-peu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  font-size: 0.75rem;
+}
+.poster-qr {
+  width: 4.5rem;
+  height: 4.5rem;
+  flex-shrink: 0;
+}
+.poster-qr svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media print {
+  @page {
+    size: A3 landscape;
+    margin: 8mm;
+  }
+  html,
+  body {
+    background: var(--color-paper) !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body > *:not(main),
+  .no-print {
+    display: none !important;
+  }
+  main > div {
+    padding: 0 !important;
+  }
+  .poster-scroll {
+    overflow: visible;
+  }
+  .poster-sheet {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    zoom: 1.17;
+    margin: 0 auto;
+  }
+}
+
+/* ── Tabla para insertar (/incrustar): sin cabecera, pie ni aviso de cookies ── */
+body:has(.incrustat) > *:not(main) {
+  display: none !important;
+}
+.incrustat {
+  --cell-w: 5rem;
+}

@@ -6,6 +6,7 @@ nom: Aportación periódica invariable
 resum: Invierte la misma cantidad cada mes, pase lo que pase en el mercado
 periode: 4
 grup: 4
+revisat: "2026-07-04"
 ---
 
 ## En una frase

@@ -6,6 +6,7 @@ nom: Regla del 72
 resum: Los años para duplicar el capital, calculados de cabeza
 periode: 4
 grup: 4
+revisat: "2026-07-04"
 ---
 
 ## En una frase

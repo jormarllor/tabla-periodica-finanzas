@@ -6,6 +6,7 @@ nom: TAE hipoteca
 resum: El coste de una hipoteca hoy y la decisión entre tipo fijo y variable
 periode: 3
 grup: 7
+revisat: "2026-11-10"
 ---
 
 ## En una frase

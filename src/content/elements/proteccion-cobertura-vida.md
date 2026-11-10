@@ -6,6 +6,7 @@ nom: Cobertura de vida
 resum: El seguro que protege a quien depende de tus ingresos
 periode: 3
 grup: 8
+revisat: "2026-07-04"
 ---
 
 ## En una frase

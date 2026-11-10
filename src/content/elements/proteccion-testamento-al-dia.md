@@ -6,6 +6,7 @@ nom: Testamento al día
 resum: La decisión que evita conflictos y protege a los tuyos
 periode: 5
 grup: 8
+revisat: "2026-07-04"
 ---
 
 ## En una frase

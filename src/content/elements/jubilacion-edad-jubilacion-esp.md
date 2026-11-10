@@ -6,6 +6,7 @@ nom: Edad ordinaria de jubilación
 resum: La edad estándar de jubilación en España
 periode: 5
 grup: 8
+revisat: "2026-07-04"
 ---
 
 ## En una frase

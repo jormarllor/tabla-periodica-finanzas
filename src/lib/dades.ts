@@ -192,3 +192,17 @@ function quotaEscala(base: number, escala: Tram[]): number {
 export function quotaEstalvi(guany: number): number {
   return quotaEscala(Math.max(0, guany), IRPF.estalvi);
 }
+
+/** Mínimo personal general (sin mínimos por descendientes, edad, etc.). */
+export const MINIM_PERSONAL = 5550;
+
+/** Cuota íntegra ORIENTATIVA de una base liquidable general (escala de referencia). */
+export function quotaIrpf(base: number): number {
+  const b = Math.max(0, base);
+  return quotaEscala(b, MARGINALS_ORIENTATIUS) - quotaEscala(Math.min(b, MINIM_PERSONAL), MARGINALS_ORIENTATIUS);
+}
+
+/** Tipo marginal orientativo (%) para una base liquidable general. */
+export function marginalIrpf(base: number): number {
+  return base <= MINIM_PERSONAL ? 0 : marginalOrientatiu(base);
+}

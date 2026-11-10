@@ -6,6 +6,7 @@ nom: Coste real de los intereses
 resum: Cuando los intereses multiplican el coste de lo que has comprado
 periode: 3
 grup: 7
+revisat: "2026-07-04"
 ---
 
 ## En una frase

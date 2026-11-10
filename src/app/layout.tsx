@@ -25,8 +25,8 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} — Wellness Financiero`,
-    template: `%s — ${SITE_NAME}`,
+    default: "Tabla periódica de las finanzas personales",
+    template: "%s | Tabla financiera",
   },
   description: SITE_DESCRIPTION,
   applicationName: SITE_NAME,

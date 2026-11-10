@@ -6,6 +6,7 @@ nom: Verifica antes de hacer clic
 resum: La estafa que imita a tu banco para robarte
 periode: 2
 grup: 9
+revisat: "2026-07-04"
 ---
 
 ## En una frase

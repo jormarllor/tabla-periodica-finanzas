@@ -6,6 +6,7 @@ nom: Aportación plan de pensiones individual
 resum: El límite anual con ventaja fiscal en el IRPF
 periode: 5
 grup: 8
+revisat: "2026-11-10"
 ---
 
 ## En una frase

@@ -17,7 +17,7 @@ const FREQ = [
   { label: "Anual", value: 1 },
 ];
 
-const eur = new Intl.NumberFormat("es-ES", {
+const eur = new Intl.NumberFormat("es-ES", { useGrouping: "always",
   style: "currency",
   currency: "EUR",
   maximumFractionDigits: 0,

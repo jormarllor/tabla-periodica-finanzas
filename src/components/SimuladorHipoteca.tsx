@@ -11,12 +11,12 @@ import { DADES, numDada, perInput } from "@/lib/dades";
  * Sin dependencias: gráfico de barras y tabla propios.
  */
 
-const eur0 = new Intl.NumberFormat("es-ES", {
+const eur0 = new Intl.NumberFormat("es-ES", { useGrouping: "always",
   style: "currency",
   currency: "EUR",
   maximumFractionDigits: 0,
 });
-const eur2 = new Intl.NumberFormat("es-ES", {
+const eur2 = new Intl.NumberFormat("es-ES", { useGrouping: "always",
   style: "currency",
   currency: "EUR",
   minimumFractionDigits: 2,

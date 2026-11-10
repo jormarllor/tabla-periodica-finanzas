@@ -6,6 +6,7 @@ nom: Incremento anual de ahorro
 resum: Un poco más, año tras año
 periode: 3
 grup: 2
+revisat: "2026-07-04"
 ---
 
 ## En una frase
