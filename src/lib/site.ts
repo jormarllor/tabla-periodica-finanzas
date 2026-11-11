@@ -17,3 +17,6 @@ export const SITE_DESCRIPTION =
 /** Newsletter de LinkedIn (única fuente de verdad: menú, pie, Sobre mí, CTA). */
 export const NEWSLETTER_NAME = "Wellness Financiero";
 export const NEWSLETTER_URL = "https://www.linkedin.com/newsletters/wellness-financiero-7115738111975792640/";
+
+/** Perfil personal de LinkedIn de Jordi Martínez-Llorente. */
+export const LINKEDIN_PROFILE_URL = "https://es.linkedin.com/in/jordi-martinez-llorente/es";

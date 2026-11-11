@@ -6,7 +6,7 @@ nom: Ratio de endeudamiento
 resum: Qué parte del sueldo ya has comprometido con deudas
 periode: 3
 grup: 7
-revisat: "2026-07-04"
+revisat: "2026-11-11"
 ---
 
 ## En una frase
@@ -21,14 +21,16 @@ El **ratio de endeudamiento** mide qué parte de tus ingresos está comprometida
 
 Incluye todo lo que estás obligado a pagar mes a mes:
 
-- Hipoteca o alquiler (si lo cuentas como deuda equivalente)
+- Hipoteca
 - Préstamo del coche
 - Cuotas mínimas de tarjetas con saldo vivo
 - Préstamos personales
 - Créditos de financiación (electrodomésticos, móviles, etc.)
 - Cuotas de estudios o avales
 
-Es el ratio que **los bancos miran primero** cuando quieres una nueva operación. Para los bancos, el umbral habitual de riesgo es el 35-40%: por encima, te suelen denegar el nuevo crédito o exigir más garantías.
+> **¿Y el alquiler?** El alquiler **no es una deuda**: es un gasto fijo de vivienda, no la devolución de un préstamo. Por eso no se suma al ratio de endeudamiento, que solo mide cuotas de préstamos y créditos. Lo que sí conviene vigilar es el peso de tus gastos fijos en el presupuesto: si vives de alquiler, mira también el [coste de la vivienda](/presupuesto/coste-vivienda-30) sobre tus ingresos. Son dos indicadores distintos y conviene mirarlos por separado.
+
+Es uno de los ratios que **los bancos miran primero** cuando quieres una nueva operación. Muchas entidades toman como referencia orientativa un 35-40%, pero **no es una norma legal**: cada una aplica sus propios criterios según tus ingresos, tu estabilidad y tu historial. Por encima de esa franja suele ser más difícil que te concedan un nuevo crédito.
 
 ## Por qué es importante
 
@@ -45,13 +47,13 @@ Es el ratio que **los bancos miran primero** cuando quieres una nueva operación
 | Ratio actual | Lectura práctica                                                  |
 | -----------: | ------------------------------------------------------------------ |
 |    ≤ 30%     | Cómodo: tienes margen para ahorrar y absorber imprevistos          |
-|    30-35%    | Umbral bancario estándar; conviene no superarlo                    |
+|    30-35%    | Referencia orientativa habitual; conviene no superarla             |
 |    35-45%    | Zona de tensión: difícil conseguir nuevos créditos, margen limitado |
 |    > 45%     | Presión estructural: hay que plantear una reestructuración de la deuda |
 
 ## Cómo aplicarlo hoy
 
-1. **Suma todas las cuotas mensuales de deuda** de los últimos 3 meses (hipoteca + coche + tarjetas + préstamos).
+1. **Suma todas las cuotas mensuales de deuda** (hipoteca + coche + tarjetas + préstamos). Si varían de un mes a otro, usa la media de los últimos 3 meses.
 2. **Divídelo entre tus ingresos netos mensuales.**
 3. **Lee el resultado** con la tabla de arriba.
 4. **Si estás por encima del 35%**, considera:

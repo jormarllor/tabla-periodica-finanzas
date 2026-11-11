@@ -1,24 +1,34 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
+import { personaJsonLd } from "@/lib/autor";
+import JsonLd from "@/components/JsonLd";
+import { metaSocial } from "@/lib/meta";
 import SocialLinks from "@/components/SocialLinks";
-import { NEWSLETTER_URL } from "@/lib/site";
+import EnllacLinkedin from "@/components/EnllacLinkedin";
+
+const SOBRE_TITOL = "Sobre mí: Jordi Martínez-Llorente";
+const SOBRE_DESC =
+  "Qué es la tabla periódica de las finanzas personales y quién está detrás: Jordi Martínez-Llorente, director de educación financiera del IEF y creador de Wellness Financiero.";
 
 export const metadata: Metadata = {
-  title: "Sobre mí",
-  description:
-    "Qué es la tabla periódica de las finanzas personales y quién está detrás: Jordi Martínez-Llorente, director de educación financiera del IEF y creador de Wellness Financiero.",
+  title: SOBRE_TITOL,
+  description: SOBRE_DESC,
   alternates: { canonical: "/sobre" },
-  openGraph: {
-    type: "article",
-    url: "/sobre",
-    title: "Sobre mí",
-    description:
-      "Qué es la tabla periódica de las finanzas personales y quién está detrás.",
-  },
+  ...metaSocial(SOBRE_TITOL, SOBRE_DESC, "/sobre"),
 };
 
 export default function SobrePage() {
   return (
     <article className="max-w-2xl mx-auto px-4 sm:px-6 py-12">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "ProfilePage",
+          url: `${SITE_URL}/sobre`,
+          inLanguage: "es",
+          mainEntity: personaJsonLd(),
+        }}
+      />
       <h1 className="font-serif text-4xl sm:text-5xl leading-tight">
         Sobre mí
       </h1>
@@ -73,13 +83,9 @@ export default function SobrePage() {
         </p>
         <p>
           En{" "}
-          <a
-            href={NEWSLETTER_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <EnllacLinkedin kind="newsletter" location="sobre">
             Wellness Financiero
-          </a>{" "}
+          </EnllacLinkedin>{" "}
           comparto contenidos sobre bienestar financiero, educación financiera y
           finanzas personales con una idea central: el dinero no es solo
           números; también es tranquilidad y calidad de vida.
@@ -88,7 +94,7 @@ export default function SobrePage() {
 
       <div className="mt-10 flex flex-wrap items-center gap-3 border-t border-[var(--color-paper-strong)] pt-6">
         <span className="text-sm text-[var(--color-muted)]">Me puedes seguir en</span>
-        <SocialLinks />
+        <SocialLinks location="sobre" />
       </div>
 
       <p className="mt-8 text-xs leading-relaxed text-[var(--color-muted)]">

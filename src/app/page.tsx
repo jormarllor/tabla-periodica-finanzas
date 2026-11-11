@@ -1,5 +1,5 @@
 import PeriodicTable from "@/components/PeriodicTable";
-import SubscriuCTA from "@/components/SubscriuCTA";
+import SobreAutor from "@/components/SobreAutor";
 import IntroPortada from "@/components/IntroPortada";
 import JsonLd from "@/components/JsonLd";
 import { personaJsonLd } from "@/lib/autor";
@@ -9,6 +9,7 @@ export default function HomePage() {
   return (
     <div className="max-w-[88rem] mx-auto px-4 sm:px-6 py-8 sm:py-12">
       <PeriodicTable />
+      <SobreAutor />
       <IntroPortada />
       <JsonLd
         data={{
@@ -21,9 +22,6 @@ export default function HomePage() {
           author: personaJsonLd(),
         }}
       />
-      <div className="max-w-3xl mx-auto">
-        <SubscriuCTA origen="portada" />
-      </div>
     </div>
   );
 }

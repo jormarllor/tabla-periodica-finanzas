@@ -12,6 +12,8 @@ export interface SeoFitxa {
   h1: string;
   titol: string;
   descripcio: string;
+  /** Si es true, el título se usa tal cual, sin el sufijo " | Tabla financiera". */
+  titolAbsolut?: boolean;
 }
 
 export const SEO_FITXES: Record<number, SeoFitxa> = {
@@ -55,8 +57,9 @@ export const SEO_FITXES: Record<number, SeoFitxa> = {
   // ── Presupuesto ──────────────────────────────────────────────────────────
   8: {
     h1: "Regla 50/30/20: gastos necesarios",
-    titol: "Gastos necesarios u obligatorios: el 50%",
-    descripcio: "Qué gastos son necesarios u obligatorios, por qué la regla 50/30/20 les reserva el 50% de los ingresos netos y qué hacer si hoy son más. Con calculadora.",
+    titol: "Regla 50/30/20: cuánto dedicar a los gastos necesarios",
+    titolAbsolut: true,
+    descripcio: "Cuánto dedicar a los gastos necesarios u obligatorios según la regla 50/30/20, qué cuenta como necesario y qué hacer si hoy pasas del 50%. Con calculadora.",
   },
   9: {
     h1: "Regla 50/30/20: el 30% de estilo de vida",
@@ -126,9 +129,10 @@ export const SEO_FITXES: Record<number, SeoFitxa> = {
     descripcio: "Los fondos de gestión activa cobran entre el 1% y el 2% al año y la mayoría no bate a su índice. Cómo comparar costes y cuándo puede tener sentido pagarlos.",
   },
   22: {
-    h1: "La regla 120 menos la edad",
-    titol: "Regla 120 − edad: cuánta bolsa tener",
-    descripcio: "La regla 120 menos la edad propone qué porcentaje de la cartera poner en bolsa y cuál en renta fija. Cómo usarla y cuándo conviene ajustarla.",
+    h1: "Regla de 120 menos la edad",
+    titol: "Regla de 120 menos la edad: cómo funciona y sus limitaciones",
+    titolAbsolut: true,
+    descripcio: "Cómo funciona la regla de 120 menos la edad para repartir entre bolsa y renta fija, una tabla por edades y sus limitaciones: perfil, horizonte y revisión.",
   },
   23: {
     h1: "Horizonte mínimo para invertir en bolsa",
@@ -149,8 +153,9 @@ export const SEO_FITXES: Record<number, SeoFitxa> = {
   // ── Deuda ────────────────────────────────────────────────────────────────
   26: {
     h1: "Ratio de endeudamiento",
-    titol: "Ratio de endeudamiento: el límite del 35%",
-    descripcio: "Cómo calcular tu ratio de endeudamiento, por qué los bancos y el Banco de España miran que no pase del 35% de los ingresos netos y qué hacer si es más alto.",
+    titol: "Ratio de endeudamiento: cómo calcularlo y cuánto es recomendable",
+    titolAbsolut: true,
+    descripcio: "Cómo calcular el ratio de endeudamiento (cuotas de deuda entre ingresos netos), por qué el 35% es solo una referencia y en qué se diferencia del alquiler.",
   },
   27: {
     h1: "TAE de la tarjeta de crédito y revolving",
@@ -164,8 +169,9 @@ export const SEO_FITXES: Record<number, SeoFitxa> = {
   },
   29: {
     h1: "TAE de un préstamo personal",
-    titol: "TAE de préstamos personales: tabla y guía",
-    descripcio: "Tabla con las TAE normales de los préstamos personales según el perfil, cómo comparar ofertas y cuándo tiene sentido usar uno para reunificar deudas caras.",
+    titol: "TAE de un préstamo personal: qué significa y cómo compararla",
+    titolAbsolut: true,
+    descripcio: "Qué significa la TAE de un préstamo personal, una tabla con las TAE habituales según el perfil y cómo comparar ofertas para no pagar de más.",
   },
   30: {
     h1: "Tarjeta de crédito a 0 € cada mes",
@@ -205,9 +211,10 @@ export const SEO_FITXES: Record<number, SeoFitxa> = {
     descripcio: "Tabla de la edad de jubilación por años: 66 años y 10 meses en 2026 y 67 años en 2027, o 65 si tienes suficientes años cotizados. Con ejemplos.",
   },
   37: {
-    h1: "Tasa de sustitución o de reemplazo",
-    titol: "Tasa de reemplazo o sustitución: qué es",
-    descripcio: "Qué es la tasa de reemplazo o de sustitución de la jubilación, qué parte de tu último sueldo cubrirá la pensión y por qué planificar con un 65-70%.",
+    h1: "Tasa de sustitución de la pensión",
+    titol: "Tasa de sustitución de la pensión: qué es y cómo calcularla",
+    titolAbsolut: true,
+    descripcio: "Qué es la tasa de sustitución (o de reemplazo) de la pensión, cómo calcularla con tu último sueldo y por qué planificar con un 65-70% es prudente.",
   },
   38: {
     h1: "Informe de vida laboral",

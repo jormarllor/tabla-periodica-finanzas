@@ -72,7 +72,7 @@ export const ELEMENTS: ElementFinancer[] = [
   // DEUDA (8) — 8 cols × 1 fila
   { id: 26, categoria: "deuda", slug: "ratio-endeudamiento",   simbol: "≤35%",          nom: "Ratio de endeudamiento" },
   { id: 27, categoria: "deuda", slug: "tae-tarjeta-credito",   simbol: "20-24%",        nom: "TAE tarjeta de crédito" },
-  { id: 28, categoria: "deuda", slug: "tae-hipoteca-fija",     simbol: "3-4%",          nom: "TAE hipoteca" },
+  { id: 28, categoria: "deuda", slug: "tae-hipoteca-fija",     simbol: "2,5-3,5%",      nom: "TAE hipoteca" },
   { id: 29, categoria: "deuda", slug: "tae-prestamo-personal", simbol: "6-12%",         nom: "TAE préstamo personal" },
   { id: 30, categoria: "deuda", slug: "saldo-cero-tarjeta",    simbol: "0 €",           nom: "Saldo ideal tarjeta" },
   { id: 31, categoria: "deuda", slug: "coste-real-intereses",  simbol: "×2,5",          nom: "Coste real de los intereses" },

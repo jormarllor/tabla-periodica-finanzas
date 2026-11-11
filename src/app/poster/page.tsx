@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { metaSocial } from "@/lib/meta";
 import QRCode from "qrcode";
 import { TaulaGran } from "@/components/PeriodicTable";
 import BotoImprimir from "@/components/BotoImprimir";
@@ -10,6 +11,11 @@ export const metadata: Metadata = {
   title: "Póster imprimible y tabla para insertar",
   description: `Descarga o imprime la ${SITE_NAME.toLowerCase()} en formato póster (A3 apaisado) o insértala en tu web.`,
   alternates: { canonical: "/poster" },
+  ...metaSocial(
+    "Póster imprimible y tabla para insertar",
+    `Descarga o imprime la ${SITE_NAME.toLowerCase()} en formato póster (A3 apaisado) o insértala en tu web.`,
+    "/poster",
+  ),
 };
 
 export default async function PosterPage() {

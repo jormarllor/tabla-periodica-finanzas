@@ -9,7 +9,44 @@ import Script from "next/script";
  * - "Accepta" i "Rebutja" tenen la mateixa visibilitat.
  * - La decisió es desa a localStorage i no es torna a preguntar.
  * - GA només s'activa en producció (no embruta les dades en local).
+ *
+ * Mesura (afegit novembre 2026):
+ * - Només s'envien dades des del domini de producció (no des de les
+ *   previsualitzacions de Vercel ni des de localhost), tret que s'obri una URL
+ *   amb ?debug_mode=1 per provar-ho a DebugView.
+ * - ?intern=1 marca aquest navegador com a trànsit intern (traffic_type =
+ *   "internal") perquè el filtre de GA4 l'exclogui; ?intern=0 ho desfà.
+ * - ?debug_mode=1 activa el mode de depuració durant la sessió.
+ * - La navegació interna (Next.js) la registra la mesura millorada de GA4
+ *   ("canvis de pàgina segons l'historial"); aquí no s'envia cap page_view
+ *   manual, per no duplicar-ne.
  */
+const HOSTS_PRODUCCIO = ["tablaperiodicafinanciera.es", "www.tablaperiodicafinanciera.es"];
+
+/** Llegeix els paràmetres ?intern= i ?debug_mode= i en desa l'estat. */
+function configMesura(): { enabled: boolean; cfg: Record<string, unknown> } {
+  const params = new URLSearchParams(window.location.search);
+  try {
+    if (params.get("intern") === "1") localStorage.setItem("trafico-interno", "1");
+    if (params.get("intern") === "0") localStorage.removeItem("trafico-interno");
+    if (params.get("debug_mode") === "1") sessionStorage.setItem("ga-debug", "1");
+    if (params.get("debug_mode") === "0") sessionStorage.removeItem("ga-debug");
+  } catch {
+    /* emmagatzematge no disponible */
+  }
+  let intern = false;
+  let debug = false;
+  try {
+    intern = localStorage.getItem("trafico-interno") === "1";
+    debug = sessionStorage.getItem("ga-debug") === "1";
+  } catch {
+    /* ignora */
+  }
+  const cfg: Record<string, unknown> = {};
+  if (intern) cfg.traffic_type = "internal";
+  if (debug) cfg.debug_mode = true;
+  return { enabled: HOSTS_PRODUCCIO.includes(window.location.hostname) || debug, cfg };
+}
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "G-7DQPGZ3QKM";
 const STORAGE_KEY = "cookie-consent";
 
@@ -31,21 +68,31 @@ export default function CookieConsent() {
     }
   }, []);
 
+  // L'enllaç "Configurar cookies" del peu torna a mostrar l'avís.
+  useEffect(() => {
+    const reobre = () => setConsent(null);
+    window.addEventListener("cookie-consent-reset", reobre);
+    return () => window.removeEventListener("cookie-consent-reset", reobre);
+  }, []);
+
   function decide(value: "granted" | "denied") {
     try {
       localStorage.setItem(STORAGE_KEY, value);
     } catch {
       /* ignora */
     }
+    // Si es retira el consentiment amb GA ja carregat, l'atura a l'instant.
+    (window as unknown as Record<string, boolean>)[`ga-disable-${GA_ID}`] = value === "denied";
     setConsent(value);
   }
 
   const isProd = process.env.NODE_ENV === "production";
   const showBanner = mounted && consent === null;
+  const mesura = mounted && consent === "granted" ? configMesura() : null;
 
   return (
     <>
-      {isProd && consent === "granted" && GA_ID && (
+      {isProd && mesura?.enabled && GA_ID && (
         <>
           <Script
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
@@ -56,7 +103,7 @@ export default function CookieConsent() {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', '${GA_ID}');
+              gtag('config', '${GA_ID}', ${JSON.stringify(mesura.cfg)});
             `}
           </Script>
         </>

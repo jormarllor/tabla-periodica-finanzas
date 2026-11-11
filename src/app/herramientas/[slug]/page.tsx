@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { metaSocial } from "@/lib/meta";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { EINES, getEina } from "@/lib/eines";
@@ -11,6 +12,7 @@ import CostHabit from "@/components/CostHabit";
 import FonsEmergencia from "@/components/FonsEmergencia";
 import PlaPensions from "@/components/PlaPensions";
 import SubscriuCTA from "@/components/SubscriuCTA";
+import { SigueLinkedin } from "@/components/EnllacLinkedin";
 import Compartir from "@/components/Compartir";
 import JsonLd from "@/components/JsonLd";
 import { personaJsonLd } from "@/lib/autor";
@@ -44,7 +46,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     title: eina.seoTitol,
     description: eina.desc,
     alternates: { canonical: url },
-    openGraph: { type: "website", url, title: eina.seoTitol, description: eina.desc },
+    ...metaSocial(eina.seoTitol, eina.desc, url),
   };
 }
 
@@ -103,6 +105,7 @@ export default async function EinaPage({ params }: Params) {
       />
 
       <SubscriuCTA origen="herramienta" pagina={eina.slug} />
+      <SigueLinkedin location="herramienta" />
 
       <hr className="my-12 border-[var(--color-paper-strong)]" />
       <Link

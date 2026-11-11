@@ -1,5 +1,6 @@
 import SocialLinks from "./SocialLinks";
-import { NEWSLETTER_URL } from "@/lib/site";
+import EnllacLinkedin from "./EnllacLinkedin";
+import ConfigurarCookies from "./ConfigurarCookies";
 
 export default function Footer() {
   return (
@@ -10,17 +11,14 @@ export default function Footer() {
         </p>
         <p>
           Wellness Financiero ·{" "}
-          <a
-            href={NEWSLETTER_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-[var(--color-primary)]"
-          >
+          <EnllacLinkedin kind="newsletter" location="pie" className="hover:text-[var(--color-primary)]">
             Newsletter en LinkedIn
-          </a>
+          </EnllacLinkedin>
         </p>
         <SocialLinks className="justify-center pt-1" />
-        <p>Jordi Martínez-Llorente · {new Date().getFullYear()}</p>
+        <p>
+          Jordi Martínez-Llorente · {new Date().getFullYear()} · <ConfigurarCookies />
+        </p>
       </div>
     </footer>
   );

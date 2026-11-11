@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { AUTOR, dataLlarga } from "@/lib/autor";
+import { SigueLinkedin } from "./EnllacLinkedin";
 
 /** Caja de autor al final de la ficha. */
-export default function AutorFitxa({ revisat }: { revisat?: string }) {
+export default function AutorFitxa({ revisat, element }: { revisat?: string; element?: number }) {
   return (
     <aside className="mt-10 flex gap-4 rounded-xl border border-[var(--color-paper-strong)] bg-white/60 p-5 text-sm">
       <div
@@ -23,6 +24,7 @@ export default function AutorFitxa({ revisat }: { revisat?: string }) {
         {revisat && (
           <p className="mt-2 text-xs text-[var(--color-muted)]">Revisado el {dataLlarga(revisat)}.</p>
         )}
+        <SigueLinkedin location="ficha" element={element} />
       </div>
     </aside>
   );

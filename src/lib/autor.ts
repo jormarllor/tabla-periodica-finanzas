@@ -1,14 +1,14 @@
-import { NEWSLETTER_URL, SITE_AUTHOR, SITE_URL } from "./site";
+import { LINKEDIN_PROFILE_URL, NEWSLETTER_URL, SITE_AUTHOR, SITE_URL } from "./site";
 
 /** Datos del autor, compartidos por la caja de autor y los datos estructurados. */
 export const AUTOR = {
   nom: SITE_AUTHOR,
-  carrec: "Director de Educación Financiera del Institut d'Estudis Financers (IEF)",
+  carrec: "Director de Educación Financiera del Instituto de Estudios Financieros (IEF)",
   bio: "Lleva años trabajando en educación financiera para ayudar a personas, familias y estudiantes a entender el dinero y decidir con más criterio. Escribe la newsletter Wellness Financiero.",
   url: `${SITE_URL}/sobre`,
   perfils: [
     NEWSLETTER_URL,
-    "https://www.linkedin.com/in/jordi-martinez-llorente",
+    LINKEDIN_PROFILE_URL,
     "https://instagram.com/jordimarllor",
     "https://x.com/jordimarllor",
   ],
@@ -21,7 +21,7 @@ export function personaJsonLd() {
     jobTitle: AUTOR.carrec,
     url: AUTOR.url,
     sameAs: AUTOR.perfils,
-    worksFor: { "@type": "Organization", name: "Institut d'Estudis Financers" },
+    worksFor: { "@type": "Organization", name: "Instituto de Estudios Financieros" },
   };
 }
 

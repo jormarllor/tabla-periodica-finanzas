@@ -12,6 +12,8 @@ import {
 import { loadElementContent } from "@/lib/content";
 import DadesVives from "@/components/DadesVives";
 import SubscriuCTA from "@/components/SubscriuCTA";
+import EinesRelacionades from "@/components/EinesRelacionades";
+import { einesRelacionades } from "@/lib/eines";
 import AutorFitxa from "@/components/AutorFitxa";
 import Compartir from "@/components/Compartir";
 import JsonLd from "@/components/JsonLd";
@@ -47,7 +49,8 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     typeof content?.frontmatter.resum === "string"
       ? content.frontmatter.resum
       : element.nom;
-  const title = seo?.titol ?? `${element.simbol} · ${element.nom}`;
+  const titol = seo?.titol ?? `${element.simbol} · ${element.nom}`;
+  const title = seo?.titolAbsolut ? { absolute: titol } : titol;
   const description = seo?.descripcio ?? resum;
   const url = `/${element.categoria}/${element.slug}`;
   const revisat = typeof content?.frontmatter.revisat === "string" ? content.frontmatter.revisat : undefined;
@@ -60,7 +63,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     openGraph: {
       type: "article",
       url,
-      title,
+      title: titol,
       description,
       section: info.nom,
       authors: [AUTOR.nom],
@@ -68,7 +71,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: titol,
       description,
     },
   };
@@ -260,11 +263,13 @@ export default async function ElementPage({ params }: Params) {
         </section>
       )}
 
+      <EinesRelacionades eines={einesRelacionades(`/${element.categoria}/${element.slug}`)} />
+
       <Compartir url={url} titol={h1} />
 
-      <AutorFitxa revisat={revisat} />
+      <AutorFitxa revisat={revisat} element={element.id} />
 
-      <SubscriuCTA origen="ficha" pagina={`${element.categoria}/${element.slug}`} color={info.color} />
+      <SubscriuCTA origen="ficha" pagina={`${element.categoria}/${element.slug}`} element={element.id} color={info.color} />
 
       <hr className="my-12 border-[var(--color-paper-strong)]" />
 

@@ -1,20 +1,18 @@
 import type { Metadata } from "next";
+import { metaSocial } from "@/lib/meta";
 import Link from "next/link";
 import { EINES } from "@/lib/eines";
-import { NEWSLETTER_URL } from "@/lib/site";
+import EnllacLinkedin from "@/components/EnllacLinkedin";
+
+const EINES_TITOL = "Calculadoras de finanzas personales gratis";
+const EINES_DESC =
+  "Calculadoras gratuitas de finanzas personales: presupuesto, interés compuesto, hipoteca y Euríbor, deudas, fondo de emergencia y plan de pensiones.";
 
 export const metadata: Metadata = {
-  title: "Herramientas",
-  description:
-    "Calculadoras de finanzas personales: presupuesto, planificador de ahorro e inversión, simulador de hipoteca y más. Pon números a tus decisiones.",
+  title: EINES_TITOL,
+  description: EINES_DESC,
   alternates: { canonical: "/herramientas" },
-  openGraph: {
-    type: "website",
-    url: "/herramientas",
-    title: "Herramientas — Calculadoras de finanzas personales",
-    description:
-      "Presupuesto, planificador de ahorro e inversión, simulador de hipoteca y más herramientas para poner números a tus decisiones.",
-  },
+  ...metaSocial(EINES_TITOL, EINES_DESC, "/herramientas"),
 };
 
 export default function EinesPage() {
@@ -49,14 +47,13 @@ export default function EinesPage() {
       <p className="mt-10 text-sm text-[var(--color-muted)]">
         Si hay alguna otra calculadora que te ayudaría, me lo puedes decir
         en{" "}
-        <a
-          href={NEWSLETTER_URL}
-          target="_blank"
-          rel="noopener noreferrer"
+        <EnllacLinkedin
+          kind="newsletter"
+          location="herramientas"
           className="text-[var(--color-primary)] underline underline-offset-2 hover:text-[var(--color-primary-dark)]"
         >
           Wellness Financiero
-        </a>
+        </EnllacLinkedin>
         .
       </p>
     </article>

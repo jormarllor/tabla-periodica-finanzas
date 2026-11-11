@@ -1,12 +1,13 @@
 "use client";
 
 import { NEWSLETTER_URL } from "@/lib/site";
+import EnllacLinkedin from "./EnllacLinkedin";
 
 /**
  * Invitación a suscribirse a la newsletter Wellness Financiero (LinkedIn).
  * Sin pop-ups: se pone donde la persona ya ha sacado provecho de la web (final
- * de ficha, resultado de una herramienta, póster, portada). Registra el clic
- * en GA solo si se han aceptado las cookies (si no, window.gtag no existe).
+ * de ficha, resultado de una herramienta, póster). El clic se registra en GA4
+ * como click_linkedin_newsletter (ver src/lib/analytics.ts).
  */
 
 type Origen = "ficha" | "herramienta" | "poster" | "portada";
@@ -30,18 +31,15 @@ const TEXTOS: Record<Origen, { titol: string; text: string }> = {
   },
 };
 
-declare global {
-  interface Window {
-    gtag?: (...args: unknown[]) => void;
-  }
-}
-
 export default function SubscriuCTA({
   origen,
   pagina,
+  element,
   color = "var(--color-primary)",
 }: {
   origen: Origen;
+  /** Número del elemento financiero (1-61), en las fichas. */
+  element?: number;
   /** Identificador de la página para la analítica (slug de la ficha o la herramienta). */
   pagina?: string;
   color?: string;
@@ -55,18 +53,16 @@ export default function SubscriuCTA({
     >
       <p className="font-serif text-xl text-[var(--color-ink)]">{t.titol}</p>
       <p className="mt-2 text-sm leading-relaxed text-[var(--color-ink-soft)]">{t.text}</p>
-      <a
+      <EnllacLinkedin
+        kind="newsletter"
+        location={origen}
+        element={element}
         href={`${NEWSLETTER_URL}${sep}utm_source=tablaperiodica&utm_medium=cta&utm_campaign=${origen}&utm_content=${encodeURIComponent(pagina ?? origen)}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={() =>
-          window.gtag?.("event", "subscribe_click", { origen, pagina: pagina ?? origen })
-        }
         className="mt-4 inline-block rounded-lg px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90"
         style={{ background: color }}
       >
         Suscríbete a Wellness Financiero →
-      </a>
+      </EnllacLinkedin>
     </aside>
   );
 }

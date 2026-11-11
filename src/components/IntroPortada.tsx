@@ -103,7 +103,7 @@ export default function IntroPortada() {
           pequeña, y también para docentes y formadores: puedes{" "}
           <Link href="/poster">imprimirla en formato póster</Link>. La he hecho yo,{" "}
           <Link href="/sobre">Jordi Martínez-Llorente</Link>, director de Educación Financiera
-          del Institut d&apos;Estudis Financers.
+          del Instituto de Estudios Financieros.
         </p>
       </section>
     </div>
